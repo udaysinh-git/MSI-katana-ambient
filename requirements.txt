@@ -1,0 +1,6 @@
+mss>=9.0.1
+numpy>=1.26.4
+rich>=13.7.1
+hidapi>=0.14.0
+pyyaml>=6.0
+sounddevice>=0.4.6

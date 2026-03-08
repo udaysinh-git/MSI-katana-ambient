@@ -1,0 +1,78 @@
+# ==========================================
+# MSI Ambient Light Sync — Configuration
+# ==========================================
+
+# Mode: "screen" (sync to display (best at the moment)) | "audio" (sync to music) | "hybrid" (beta — not recommended)
+mode: "screen"
+
+# Target updates per second (FPS limit)
+# Higher = smoother transitions, more CPU. Recommended: 15-30
+target_fps: 25
+
+# Color transition smoothing (0.01 to 1.0)
+# 1.0 = instant, no smoothing
+# 0.1 = smooth, slow transitions
+smoothing_factor: 1.0
+
+# Number of keyboard zones (MSI Katana 17 = 4 zones)
+num_zones: 4
+
+# Which monitor to capture (1 = primary, 2 = secondary, etc.)
+monitor: 2
+
+# Minimum LED brightness (0-255)
+min_brightness: 0
+
+# White balance correction for LED color accuracy
+# Your keyboard LEDs may be slightly blue-tinted. Adjust these
+# multipliers (0.0 - 1.0) to compensate. Lower blue to fix blue tint.
+white_balance:
+  r: 1.0
+  g: 1.0
+  b: 0.85
+
+# ==========================================
+# Screen Mode Settings (mode: "screen")
+# ==========================================
+screen:
+  # Color mode:
+  #   "accurate" — true to screen colors
+  #   "vibrant"  — mild saturation/brightness boost (default)
+  #   "hyper"    — oversaturated and punchy (great for gaming)
+  color_mode: "hyper"
+
+  # How much to weight the bottom of the screen (0.0 - 1.0)
+  # Higher = bottom rows matter more (keyboard sits below screen)
+  # 0.0 = uniform, 0.7 = strong bottom emphasis
+  bottom_weight: 0.7
+
+  # Zone overlap (0.0 - 0.5)
+  # Adjacent zones blend slightly for smoother transitions
+  # 0.0 = no overlap, 0.15 = 15% overlap on each side
+  zone_overlap: 0.0
+
+  # Capture region:
+  #   "full"          — entire screen
+  #   "bottom"        — bottom half only
+  #   "bottom_third"  — bottom third only
+  capture_region: "full"
+
+# ==========================================
+# Audio Reactive Settings (mode: "audio")
+# ==========================================
+audio:
+  # Color scheme:
+  #   "spectrum" — each zone gets a fixed color (bass=red → treble=purple),
+  #                brightness pulses with the music energy
+  #   "energy"  — all zones pulse on a warm→cool gradient with overall volume
+  color_scheme: "spectrum"
+
+  # Sensitivity multiplier (higher = more reactive to quiet sounds)
+  sensitivity: 1.5
+
+  # Base brightness when audio is silent (0-255)
+  base_brightness: 30
+
+  # Audio device ID (run "python list_audio.py" to see all devices)
+  # Leave commented to auto-detect (Stereo Mix)
+  # device_id: 34
