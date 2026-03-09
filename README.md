@@ -6,7 +6,7 @@ Sync your MSI laptop keyboard RGB lighting with the colors on your screen — an
 
 ## Example
 
-<video src="example/example.mp4" controls autoplay loop muted width="100%"></video>
+[![Watch the video](https://raw.githubusercontent.com/udaysinh-git/MSI-katana-ambient/main/example/thumbnail.jpg)](https://raw.githubusercontent.com/udaysinh-git/MSI-katana-ambient/main/example/example.mp4)
 
 Sorry for the shit quality , i was lazy to record properly.... anyways.
 
