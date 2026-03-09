@@ -4,6 +4,14 @@ Sync your MSI laptop keyboard RGB lighting with the colors on your screen — an
 
 ![Demo](https://img.shields.io/badge/Status-Working-brightgreen)
 
+## Example
+
+<video src="example/example.mp4" controls autoplay loop muted width="100%"></video>
+
+Sorry for the shit quality , i was lazy to record properly.... anyways.
+
+> *Screen-sync mode in action — keyboard colors follow on-screen content in real time.*
+
 ## How It Works
 
 1. **Screen Capture** — Captures your screen and divides it into 4 vertical zones
